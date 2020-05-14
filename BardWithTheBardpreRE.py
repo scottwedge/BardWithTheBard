@@ -71,8 +71,8 @@ def sonnetize():
     with open('new_sonnets.txt', 'r') as text:
         sonnets = text.read()
         sonnet=sonnets.split("AAA-")
-        return (sonnet[98])
-        #return (sonnet[random.randint(1,154)])
+
+        return (sonnet[random.randint(1,154)])
 
 
 def start():
@@ -169,7 +169,7 @@ def new_nouns():
 
             madlib.edited = re.sub(rf'\s({old})(:?\S|\W)', f" {word.upper()} "   , madlib.edited, 1)
             #madlib.edited = madlib.edited.replace(madlib.nouns[word_change[index]], + word.upper(), 1)
-            print(madlib.nouns[word_change[index]], word)
+            #print(madlib.nouns[word_change[index]], word)
 
 
 def new_verbs():
