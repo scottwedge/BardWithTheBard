@@ -1,2 +1,3 @@
 # BardWithTheBard
- Shakespear Sonnet Madlibs
+ Shakespeare Sonnet Madlibs
+Random word changes and some word detection.  
