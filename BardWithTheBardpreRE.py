@@ -68,7 +68,7 @@ class WordSearch:
         return adjectives
 
 def sonnetize():
-    with open('/Users/adamsmolenski/PycharmProjects/untitled5/venv/new_sonnets.txt', 'r') as text:
+    with open('new_sonnets.txt', 'r') as text:
         sonnets = text.read()
         sonnet=sonnets.split("AAA-")
         return (sonnet[98])
