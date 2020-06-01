@@ -360,13 +360,14 @@ def read_it_to_me():
     else:
         pass
 
-madlib = start()
-user_num = 0
-while user_num == 0:
-    user_num = changes()
-items = format_to_change(user_num)
-new_sonnet= madlib.original
-game()
-read_it_to_me()
-finale()
+if __name__ == "__main__":
+    madlib = start()
+    user_num = 0
+    while user_num == 0:
+        user_num = changes()
+    items = format_to_change(user_num)
+    new_sonnet= madlib.original
+    game()
+    read_it_to_me()
+    finale()
 
