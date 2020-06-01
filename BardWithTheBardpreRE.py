@@ -220,7 +220,7 @@ def new_nouns():
             word_change.append(x)
         for index, word in enumerate(user_nouns):
             old = madlib.nouns[word_change[index]]
-            madlib.edited = re.sub(rf'(\s){(old)}(\W)', f"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
+            madlib.edited = re.sub(rf'(\s){(old)}(\W)', rf"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
             logging.debug(f"{old}: original noun, {word.upper()}, new noun")
 
 def new_verbs():
@@ -242,7 +242,7 @@ def new_verbs():
             word_change.append(x)
         for index, word in enumerate(user_verbs):
             old = madlib.verbs[word_change[index]]
-            madlib.edited = re.sub(rf'(\s){(old)}(\W)', f"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
+            madlib.edited = re.sub(rf'(\s){(old)}(\W)', rf"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
             logging.debug(f"{old}: original verb, {word.upper()}, new verb")
 
 
@@ -265,7 +265,7 @@ def new_adverbs():
             word_change.append(x)
         for index, word in enumerate(user_adverbs):
             old = madlib.adverb[word_change[index]]
-            madlib.edited = re.sub(rf'(\s){(old)}(\W)', f"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
+            madlib.edited = re.sub(rf'(\s){(old)}(\W)', rf"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
             logging.debug(f"{old}: original adverb, {word.upper()}, new adverb")
 
 def new_adjectives():
@@ -287,7 +287,7 @@ def new_adjectives():
             word_change.append(x)
         for index, word in enumerate(user_adjectives):
             old = madlib.adjectives[word_change[index]]
-            madlib.edited = re.sub(rf'(\s){(old)}(\W)', f"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
+            madlib.edited = re.sub(rf'(\s){(old)}(\W)', rf"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
             logging.debug(f"{old}: original adjective, {word.upper()}, new adjective")
 
 def new_verbed():
@@ -310,7 +310,7 @@ def new_verbed():
             word_change.append(x)
         for index, word in enumerate(user_verbed):
             old = madlib.verbed[word_change[index]]
-            madlib.edited = re.sub(rf'(\s){(old)}(\W)', f"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
+            madlib.edited = re.sub(rf'(\s){(old)}(\W)', rf"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
             logging.debug(f"{old}: original past tense verb, {word.upper()}, new past tense verb")
 
 def new_plnouns():
@@ -332,7 +332,7 @@ def new_plnouns():
             word_change.append(x)
         for index, word in enumerate(user_plnouns):
             old = madlib.plnouns[word_change[index]]
-            madlib.edited = re.sub(rf'(\s){(old)}(\W)', f"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
+            madlib.edited = re.sub(rf'(\s){(old)}(\W)', rf"\g<1>{word.upper()}\g<2>", madlib.edited, 1)
             logging.debug(f"{old}: original plural noun, {word.upper()}, new plural noun")
 
 def game():
